@@ -2,6 +2,12 @@ import mysql.connector
 import pandas as pd
 import folium
 
+mydb = mysql.connector.connect(
+  host="localhost",
+  user="yourusername",
+  passwd="yourpassword"
+)
+
 def get_trucks_location(cursor, tow):
      args = ['2022-06-06', '2025-07-07', tow]
      cursor.callproc('sp_ds_ARCOMD0006_TowToZoneLocationAtDispatchTowId_New', args)
