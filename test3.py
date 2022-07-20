@@ -5,7 +5,7 @@ import folium
 
 mydb = mysql.connector.connect(
   host="xxx",
-  user="xxx,
+  user="xxx",
   password="xx",
   database="xx"
   )
