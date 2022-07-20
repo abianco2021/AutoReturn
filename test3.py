@@ -3,10 +3,11 @@ import pandas as pd
 import folium
 
 mydb = mysql.connector.connect(
-  host="localhost",
-  user="yourusername",
-  passwd="yourpassword"
-)
+  host="",
+  user="",
+  password="",
+  database=""
+  )
 
 def get_trucks_location(cursor, tow):
      args = ['2022-06-06', '2025-07-07', tow]
