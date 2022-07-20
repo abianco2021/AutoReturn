@@ -1,12 +1,13 @@
-import mysql.connector
+import mysql
+# import mysql.connector
 import pandas as pd
 import folium
 
 mydb = mysql.connector.connect(
-  host="",
-  user="",
-  password="",
-  database=""
+  host="xxx",
+  user="xxx,
+  password="xx",
+  database="xx"
   )
 
 def get_trucks_location(cursor, tow):
